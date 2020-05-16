@@ -1,6 +1,6 @@
 let img;
 let img2;
-let wasClicked = false; 
+let wasClicked = false;
 
 function preload() {
   img = loadImage('picture.jpg');
@@ -15,7 +15,7 @@ function draw() { //this is happening at 60 frames per second....
 
   if(wasClicked == false){
     image(img, 0, 0);
-    tint(0, 153, 204); // Tint blue
+    //tint(0, 153, 204); // Tint blue
     image(img2, 500, 500);  }
 
 }
