@@ -2,7 +2,7 @@ let img1;
 let img2;
 let img3;
 var x;
-var w; 
+var w;
 function preload() {
   img1 = loadImage('picture.jpg');
   img2 = loadImage('picture2.jpg');
@@ -16,6 +16,9 @@ function preload() {
 //   image(img2, 500, 500);
 // }
 
+ function setup() {
+   createCanvas(1000,1000);
+}
 function draw() {
   x = map(mouseY, 0, 500, 0, -250);
   w = map(mouseY, 0, 500, 600, 1000);
