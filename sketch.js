@@ -1,6 +1,8 @@
 let img1;
 let img2;
 let img3;
+var x;
+var w; 
 function preload() {
   img1 = loadImage('picture.jpg');
   img2 = loadImage('picture2.jpg');
