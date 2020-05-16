@@ -3,9 +3,9 @@ let img2;
 let d;
 function preload() {
   img = loadImage('picture.jpg');
-  img.mouseOver(changeGray);
+  //img.mouseOver(changeGray);
   img2 = loadImage('picture2.jpg');
-  img2.mouseOver(changeGray);
+  //img2.mouseOver(changeGray);
   d = 10;
 }
 
