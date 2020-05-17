@@ -2,6 +2,7 @@ let img;
 let img2;
 function preload() {
   img = loadImage('picture.jpg');
+  img2 = loadImage('picture2.jpg');
 
   // Image warps because not scaling proportionally
   imageMode(CORNER);
