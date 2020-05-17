@@ -3,6 +3,7 @@ let img2;
 function preload() {
   img = loadImage('picture.jpg');
   img2 = loadImage('picture2.jpg');
+  img2.resize(50, 100)
 }
 
 function setup() {
