@@ -1,23 +1,25 @@
 // cd Sites/thesis
 // php -S localhost:8000
 
-let img;
+let img1;
 let img2;
 var color = 0;
 var angle = 0;
+var bug;
 
 function preload() {
-  img = loadImage('picture.jpg');
+  img1 = loadImage('picture.jpg');
   img2 = loadImage('picture2.jpg');
 }
 
 function setup() {
   background(0);
   createCanvas(1000,1000);
-  image(img, 0, 0);
-  tint(0, 153, 204); // Tint blue
+  image(img1, random(width - 100), random(height - 250));
   img2.resize(150, 0);
-  image(img2, 500, 500);
+  filter(GRAY);
+  image(img2, random(width - 100), random(height - 250));
+  // filter(INVERT);
   textFont("Arial");
   textSize(22);
 }
