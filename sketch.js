@@ -10,6 +10,7 @@ var bug;
 function preload() {
   img1 = loadImage('picture.jpg');
   img2 = loadImage('picture2.jpg');
+  texture = loadImage('texture.jpg'); 
 }
 
 function setup() {
@@ -19,6 +20,7 @@ function setup() {
   img2.resize(150, 0);
   filter(GRAY);
   image(img2, random(width - 100), random(height - 250));
+  blend(texture, 0, 0, 900, 600, 0, 0, 900, 600, SOFT_LIGHT);
   // filter(INVERT);
   textFont("Arial");
   textSize(22);
