@@ -6,11 +6,11 @@ function preload() {
 }
 
 function setup() {
+  background(255);
   createCanvas(1000,1000);
 }
 
 function draw() {
-  background(255)
   image(img, 0, 0);
   tint(0, 153, 204); // Tint blue
   img2.resize(150, 0);
