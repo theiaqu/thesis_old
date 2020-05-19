@@ -7,8 +7,13 @@ function preload() {
 
 function setup() {
   createCanvas(1000,1000);
+}
+
+function draw() {
+  background(255)
   image(img, 0, 0);
   tint(0, 153, 204); // Tint blue
   img2.resize(150, 0);
   image(img2, 500, 500);
+  ellipse(mouseX, mouseY, 20, 20)
 }
