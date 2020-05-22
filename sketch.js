@@ -44,7 +44,7 @@ function setup() {
   input.position(0, 50);
   input.attribute("placeholder", "type message...");
 
-  button = createButton('↵');
+  button = createButton('Generate Art!');
 	button.id("button");
 	button.position(input.width, input.y);
 	button.mousePressed(generateArt);
