@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  margin: auto;
+  display: block;
+}
+
+#input {
+  font-size: 16px;
+  border: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  width: 80%;
+  height: 40px;
+  text-transform: uppercase;
+}
+
+#select {
+  font-size: 16px;
+}
+
+#button {
+  background: gold;
+  border: 0;
+  font-size: 12px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  width: 10%;
+  height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#button:hover {
+ background: orange;
+}
+
+#saveButton {
+  background: limegreen;
+  border: 0;
+  font-size: 12px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  width: 10%;
+  height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
