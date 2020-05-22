@@ -47,7 +47,7 @@ function setup() {
   button = createButton('↵');
 	button.id("button");
 	button.position(input.width, input.y);
-	button.mousePressed();
+	button.mousePressed(generateArt);
 
   // image(img1, random(width - 250), random(height - 250));
   // img2.resize(150, 0);
@@ -75,13 +75,12 @@ function mySelectEvent() {
   text('The year is ' + year + '!', 50, 50);
 }
 
-function mousePressed() {
+function generateArt() {
 	//const country = input.value().substring(0, 15);
 	//getCountryImages(msg);
 	//input.value('');
   image(img1, random(width - 250), random(height - 250));
   img2.resize(150, 0);
-  filter(GRAY);
   image(img2, random(width - 250), random(height - 250));
 }
 
