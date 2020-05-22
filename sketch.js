@@ -13,12 +13,13 @@ let countries = [];
 let year;
 
 function preload() {
-  img1 = loadImage('picture.jpg');
-  img2 = loadImage('picture2.jpg');
-  texture = loadImage('texture.jpg');
 }
 
 function setup() {
+  img1 = loadImage('picture.jpg');
+  img2 = loadImage('picture2.jpg');
+  texture = loadImage('texture.jpg');
+
   w = windowWidth;
   h = windowHeight - 40;
   canvas = createCanvas(w, h);
@@ -46,7 +47,7 @@ function setup() {
   button = createButton('↵');
 	button.id("button");
 	button.position(input.width, input.y);
-	button.mousePressed(generateArt);
+	button.mousePressed();
 
   // image(img1, random(width - 250), random(height - 250));
   // img2.resize(150, 0);
@@ -71,18 +72,19 @@ function draw() {
 
 function mySelectEvent() {
   year = sel.value();
-  background(200);
   text('The year is ' + year + '!', 50, 50);
 }
 
-function generateArt() {
-	const country = input.value().substring(0, 15);
-	getCountryImages(msg);
-	input.value('');
+function mousePressed() {
+	//const country = input.value().substring(0, 15);
+	//getCountryImages(msg);
+	//input.value('');
+  image(img1, random(width - 250), random(height - 250));
+  img2.resize(150, 0);
+  filter(GRAY);
+  image(img2, random(width - 250), random(height - 250));
 }
 
 function getCountryImages(msg) {
   let country = msg;
-  
-
 }
